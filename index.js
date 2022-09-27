@@ -1,5 +1,4 @@
 let villeChoisie;
-
 if ('geolocation' in navigator) {
   navigator.geolocation.watchPosition((position) => {
     const url = 'https://api.openweathermap.org/data/2.5/weather?lon=' + position.coords.longitude + '&lat=' + position.coords.latitude + '&appid=dc8c9152e8adaad0ec8bf635818c0d42&units=metric';
